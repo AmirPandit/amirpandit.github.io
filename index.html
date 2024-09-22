@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amir Pandit - My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="icon" type="image/x-icon" href="./favicon.jpeg" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Amir Pandit</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="logo">Amir Pandit</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <section id="profile">
+    <div class="section-pic-container" id="profile-container">
+      <img src="./assets/profile-pic.jpeg" alt="Amir's profile picture" />
+    </div>
+    <div class="section-text">
+      <p class="section-text-p1">Hello, I'm</p>
+      <h1 class="title">Amir Pandit</h1>
+      <div class="typewriter">
+        <p id="dynamic-text" class="section-text-p2"></p>
+    </div>    
+      <div class="btn-container"> 
+        <button class="btn btn-color-2" onclick="window.open('./assets/myCV.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./index.html#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="window.open('https://www.linkedin.com/in/panditamir/', '_blank');" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="window.open('https://github.com/amirpandit', '_blank');" />
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <p class="section-text-p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section-pic-container">
+        <img src="./assets/profile-pic.jpeg" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>1+ years <br />Backend Developer</p><p>Ayata Incorporation</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>BIT[HONs]<br />2020 - 2024</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            After graduating from Nilai University with a degree in Computer Science, 
+            I embraced the role of Django Developer at Ayata Incorporation. In this position, 
+            I leverage my back-end web development skills, refined through certifications in 
+            PostgreSQL and Django Essential Training, to create robust web solutions. My commitment 
+            to delivering impactful projects aligns with our organization's mission and values, and 
+            I am dedicated to contributing to innovative solutions that drive success.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+
+  <section id="experience">
+    <p class="section-text-p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Backend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Python</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Django</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Rest-framework</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>PostgreSQL</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Html</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>React JS</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+
+  <section id="projects">
+    <p class="section-text-p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Project One</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/AmirPandit', '_blank');">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/AmirPandit', '_blank');">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Project Two</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/AmirPandit', '_blank');">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/AmirPandit', '_blank');">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Project Three</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/AmirPandit', '_blank');">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/AmirPandit', '_blank');">
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+
+  <section id="contact">
+    <p class="section-text-p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p>
+          <a href="mailto:suyogluitel235@gmail.com">amir.getintouch@gmail.com</a>
+        </p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p>
+          <a href="https://www.linkedin.com/in/panditamir/" target="_blank">LinkedIn</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2023 Amir Pandit. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
