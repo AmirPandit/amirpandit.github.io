@@ -68,29 +68,31 @@
           onclick="window.open('https://github.com/amirpandit', '_blank');" />
       </div>
     </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./index.html#about'" />
   </section>
 
   <section id="about">
     <p class="section-text-p1">Get To Know More</p>
     <h1 class="title">About Me</h1>
-    <div class="section-container">
-      <div class="section-pic-container">
-        <img src="./assets/profile-pic.jpeg" alt="Profile picture" class="about-pic" />
-      </div>
       <div class="about-details-container">
         <div class="about-containers">
           <div class="details-container">
             <img src="./assets/experience.png" alt="Experience icon" class="icon" />
             <h3>Experience</h3>
-            <p>1+ years <br />Backend Developer</p><p>Ayata Incorporation</p>
+            <p>Backend Developer</p><p>Ayata Incorporation</p>
           </div>
           <div class="details-container">
             <img src="./assets/education.png" alt="Education icon" class="icon" />
             <h3>Education</h3>
             <p>BIT[HONs]<br />2020 - 2024</p>
           </div>
-        </div>
-        <div class="text-container">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>Backend Developer</p><p>Ayata Incorporation</p>
+          </div>
+          
+        <div class="text-container" style="text-align: center;">
           <p>
             After graduating from Nilai University with a degree in Computer Science, 
             I embraced the role of Django Developer at Ayata Incorporation. In this position, 
@@ -102,7 +104,7 @@
         </div>
       </div>
     </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./index.html#experience'" />
   </section>
 
   <section id="experience">
@@ -172,7 +174,7 @@
         </div>
       </div>
     </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./index.html#projects'" />
   </section>
 
   <section id="projects">
@@ -180,11 +182,11 @@
     <h1 class="title">Projects</h1>
     <div class="experience-details-container">
       <div class="about-containers">
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+        <div class="details-container color-container" data-title = "AMS" data-description= "The Attendance Management System (AMS) is a web application that simplifies student attendance tracking in educational institutions by automating the process. It features user roles for admins, teachers, and students, enabling efficient attendance marking, detailed reporting, and visual analytics. With automatic notifications for absences and integration capabilities with existing academic systems, the AMS enhances communication and accountability. Built using Django, HTML, CSS, and PostgreSQL, and accessible on mobile devices, it significantly reduces administrative overhead while improving accuracy and student engagement.">
+          <div class="article-container" >
+            <img src="./assets/logo.svg" alt="Project 1" class="project-img" />
           </div>
-          <h2 class="experience-sub-title project-title">Project One</h2>
+          <h2 class="experience-sub-title project-title">AMS</h2>
           <div class="btn-container">
             <button class="btn btn-color-2 project-btn"
               onclick="window.open('https://github.com/AmirPandit', '_blank');">
@@ -196,11 +198,12 @@
             </button>
           </div>
         </div>
-        <div class="details-container color-container">
+
+        <div class="details-container color-container" data-title = "Todo App" data-description= "  the work you want to do, from past to future">
           <div class="article-container">
-            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+            <img src="./assets/project-2.svg" alt="Project 2" class="project-img" />
           </div>
-          <h2 class="experience-sub-title project-title">Project Two</h2>
+          <h2 class="experience-sub-title project-title">Todo</h2>
           <div class="btn-container">
             <button class="btn btn-color-2 project-btn"
               onclick="window.open('https://github.com/AmirPandit', '_blank');">
@@ -212,25 +215,26 @@
             </button>
           </div>
         </div>
-        <div class="details-container color-container">
+
+        <div class="details-container color-container"  data-title = "UnderConstruction" data-description= "Will complete soon">
           <div class="article-container">
-            <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+            <img src="./assets/Construction.svg" alt="Project 2" class="project-img" />
           </div>
-          <h2 class="experience-sub-title project-title">Project Three</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://github.com/AmirPandit', '_blank');">
-              Github
-            </button>
-            <button class="btn btn-color-2 project-btn"
-              onclick="window.open('https://github.com/AmirPandit', '_blank');">
-              Live Demo
-            </button>
+          <h2 class="experience-sub-title project-title">Something cooking</h2>
+          <p>Under Construction</p>
           </div>
         </div>
       </div>
     </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+
+    <!-- Modal -->
+<div id="project-modal" class="modal">
+  <div class="modal-content">
+    <h2 id="modal-title"></h2>
+    <p id="modal-description"></p>
+  </div>
+</div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./index.html#contact'" />
   </section>
 
   <section id="contact">
@@ -240,7 +244,7 @@
       <div class="contact-info-container">
         <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
         <p>
-          <a href="mailto:suyogluitel235@gmail.com">amir.getintouch@gmail.com</a>
+          <a href="mailto:amir.getintouch@gmail.com">amir.getintouch@gmail.com</a>
         </p>
       </div>
       <div class="contact-info-container">

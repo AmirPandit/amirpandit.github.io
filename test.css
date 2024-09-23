@@ -145,7 +145,6 @@ section {
   display: flex;
 }
 #profile {
-  position: relative;
   display: flex;
   justify-content: center;
   gap: 5rem;
@@ -157,7 +156,6 @@ section {
   width: 400px;
   margin: auto 0;
 }
-
 #profile-container img {
   width: auto; /* Set desired width */
   height: auto; /* Set desired height */
@@ -309,16 +307,12 @@ article .icon {
 
 /* Project Section */
 #projects {
-  position: relative;
-  height: auto;
+  position: static;
 }
 .color-container {
-  width: 20%;
-  height: auto;
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
 }
-
 .project-img {
   border-radius: 2rem;
   width: 20%;
@@ -333,40 +327,8 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
-/* Modal Styles */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1000; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgba(35, 35, 35, 0.37); /* Semi-transparent background */
-  opacity: 0; /* Start hidden */
-  transition: opacity 300ms ease; /* Smooth transition for opacity */
-}
-
-.modal.show {
-  display: block; /* Show the modal */
-  opacity: 1; /* Fade in */
-}
-
-.modal-content {
-  text-align: justify;
-  background-color: #e0e0e0; /* Light grey background */
-  margin: 15% auto; /* Center vertically with margin */
-  padding: 20px;
-  border: 1px solid rgb(130, 130, 130); /* Soft grey border */
-  width: 60%; /* Width relative to screen size */
-  border-radius: 1rem; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-}
-
 /* Contact */
 #contact {
-  position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
