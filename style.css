@@ -93,12 +93,16 @@ a:hover {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: white;
+  background-color: rgba(230, 230, 230, 0.603);
+  opacity: 90%;
+  border-radius: 10%;
   width: fit-content;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3 ease-in-out;
+  z-index: 1000;
 }
+
 .menu-links a {
   display: block;
   padding: 10px;
