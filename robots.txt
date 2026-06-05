@@ -1,0 +1,44 @@
+# ==========================================
+# Robots.txt - SEO & AI Crawler Configuration
+# Target: https://amirpandit.com.np
+# ==========================================
+
+# Explicitly welcome and allow AI scrapers and search crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Cohere-ai
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Standard web crawlers
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+# Sitemap location
+Sitemap: https://amirpandit.com.np/sitemap.xml
